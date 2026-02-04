@@ -35,7 +35,8 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+        # Actualizar a la versión más reciente disponible (v2) para evitar dependencia a upload-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist
 
